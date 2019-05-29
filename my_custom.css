@@ -26,6 +26,22 @@
     }
 }
 
+.lightboxOverlay {
+    position: fixed;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.lightbox {
+    position: fixed;
+    top: 50% !important;
+    transform: translateY(-50%);
+}
+
+.lb-data .lb-number {
+    display: none !important;
+}
+
 html, body {
     width: 100%;
     -webkit-overflow-scrolling: touch;
