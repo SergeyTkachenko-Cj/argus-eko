@@ -38,7 +38,30 @@
     transform: translateY(-50%);
 }
 
+.lb-dataContainer {
+    position: relative;
+    height: 4vh;
+}
+
 .lb-data .lb-number {
+    display: none !important;
+}
+
+.lb-nav a.lb-next,
+.lb-nav a.lb-prev {
+    width: 50% !important;
+    background-size: auto 10%;
+}
+
+.lb-data .lb-close {
+    position: absolute;
+    float: none;
+    width: 100%;
+    height: 100%;
+    background-size: auto 100%;
+}
+
+.lb-loader {
     display: none !important;
 }
 
