@@ -9,7 +9,7 @@ function bambi() {		// lightbox pop-up on-resize img screen fitting
 	let lb = document.querySelector('#lightbox');
 	let img = document.querySelector('.lb-image');
 
-	    if (img) {
+	    if (lb.style.display === 'block') {
 
 	    	let path = img.getAttribute('src');
 	    	let bambi = document.querySelector("[href='"+path+"'][data-lightbox='jh-image-popup']");

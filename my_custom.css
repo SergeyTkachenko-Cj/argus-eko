@@ -327,9 +327,35 @@ a.logo_link {
     background-position: 30% -390%
 }
 
+#lg_screen_cvr ul li.item-178 a img {
+    background-image: url(../images/Graduation_cap.png);
+    background-size: 130%;
+    background-position: 0 20%;
+    border: none;
+}
+
+#lg_screen_cvr ul li.item-178 a:hover img {
+    background-position: 30% -430%
+}
+
+#lg_screen_cvr ul li.item-185 a img {
+    background-image: url(../images/skillup_meeting.png);
+    background-size: 120%;
+    background-position: 30% 20%;
+    border: none;
+}
+
+#lg_screen_cvr ul li.item-185 a:hover img {
+    background-position: 30% -600%
+}
+
 #top_icon ul li a:hover img {
     border: none !important;
     box-shadow: 1px 1px 5px black !important
+}
+
+.item-186 {
+    display: none
 }
 
 #top_icon ul li a {
@@ -420,10 +446,11 @@ table {
     width: 100%;
     box-shadow: 1px 1px 5px grey;
     border-radius: 5px;
-    border-collapse: separate;
+    /*border-collapse: separate;*/
 }
 
 td {
+    border: 1.5px solid white;
     text-align: center;
     color: #005555;
     background: #F2F0D6
