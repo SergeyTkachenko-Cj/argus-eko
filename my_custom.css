@@ -501,6 +501,10 @@ ul.menu_left li a {
     background-repeat: no-repeat;
 }
 
+#right .mod {
+    color: #005555
+}
+
 .mod_obrazetz {
     margin-bottom: 20px
 }
