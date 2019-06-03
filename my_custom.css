@@ -469,6 +469,69 @@ ul.menu_left li a {
     font-size: 20px;
 }
 
+#content .article-info .article-info-term, 
+#content time {
+    display: inline;
+    padding: 0 5px;
+    font-size: 15px;
+    color: white;
+    background: #008049;
+}
+
+p strong,
+li strong {
+    display: block;
+    margin: 1.5em 0;
+}
+
+.pagination {
+    margin-top: 2em;
+}
+
+.pagination li {
+    display: inline
+}
+
+li.pagination-start,
+li.pagination-end,
+.pagenav,
+.items-more {
+    display: none
+}
+
+.pagination-prev .pagenav,
+.pagination-next .pagenav {
+    display: inline
+}
+
+.pagination-prev a:hover,
+.pagination-next a:hover {
+    color: #005555 !important;
+    background: transparent
+}
+
+#content p.counter.pull-right {
+    font-size: 15px;
+    color: white !important;
+}
+
+.counter.pull-right,
+.pagination-prev a,
+.pagination-next a,
+.pagination-prev span,
+.pagination-next span {
+    display: inline;
+    padding: 0 5px;
+    color: white !important;
+    background: #008049;
+    transition: 0.5s;
+}
+
+.tooltip {
+    display: none !important
+}
+
+
 .mod_novosti {
     margin-bottom: 20px;
     color: #005555;
