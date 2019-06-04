@@ -121,22 +121,6 @@ a[href^="tel"] {
     background-position-y: center;
 }
 
-/*#logo {
-    position: relative;
-    width: 130px;
-    height: 110px;
-    margin-top: 30px;
-    margin-left: 15px;
-    background-image: url(../images/logologo.png),-webkit-gradient(linear, left top, left bottom, from(#28bc7b), to(#008049));
-    background-size: 105%;
-    background-repeat: no-repeat;
-    background-position: -12px 0;
-}
-
-a.logo_link {
-    width: 0
-}*/
-
 #logo {
     position: absolute;
     top: 30px;
@@ -478,6 +462,17 @@ ul.menu_left li a {
     background: #008049;
 }
 
+span.subheading-category {
+    display: inline-block;
+    margin-bottom: -2em;
+    font-size: 23px !important;
+    text-decoration: underline;
+}
+
+.page-header h2 {
+    text-decoration: underline
+}
+
 p strong,
 li strong {
     display: block;
@@ -594,7 +589,6 @@ li.pagination-end,
     width: 100%;
     background-image: url(../images/sro-iz.jpg);
     background-size: cover;
-
 }
 
 #left a.readmore,
@@ -712,6 +706,93 @@ li.pagination-end,
 #footer_left {
     margin: 30px 10px 10px 38px;
 }
+
+.field label {
+    color: #005555 !important
+}
+
+.ui.green.button {
+    background-color: #0074DD;
+}
+
+.ui.green.button:hover,
+.btn-group.pull-left button.btn.hasTooltip:hover {
+    border: none;
+    background-color: #008049;
+}
+
+.chronoforms6_credits {
+    display: none;
+}
+
+.btn-toolbar {
+    padding: 50px 0 90px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px grey;
+    text-align: center;
+    background: #F2F0D6;
+}
+
+.phrases, .phrases-box, .controls,
+.ordering-box, .only, .form-limit,
+.result-category, .result-created {
+    display: none
+}
+
+dl.search-results {
+    color: #005555
+}
+
+.searchintro p strong,
+div.error {
+    margin-top: 0;
+    font-size: 18px !important;
+    font-weight: 700;
+    color: #005555
+}
+
+.result-text {
+    margin-bottom: 1.5em
+}
+
+input#search-searchword {
+    display: inline-block;
+    width: 65%;
+    height: 2em;
+    padding-left: 10px;
+}
+
+input#search-searchword:focus {
+    outline: -webkit-focus-ring-color auto 1px;
+}
+
+input#search-searchword:-webkit-autofill {
+    background-color: white !important;
+}
+
+.btn-group.pull-left:nth-of-type(2) {
+    position: relative;
+    width: 66.5%;
+    margin: 0 auto;
+}
+
+.btn-group.pull-left button.btn.hasTooltip {
+    position: absolute;
+    left: 0; top: 10px; 
+    display: inline-block;
+    min-height: 1em;
+    padding: 0.3em 1em;
+    border: none;
+    border-radius: 4.00000006px;
+    box-shadow: 0 0 0 0 rgba(34,36,38,.15) inset;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+    color: #fff;
+    background-color: #0074DD;
+}
+
+
 
 @media (max-width: 1135px) {
 
