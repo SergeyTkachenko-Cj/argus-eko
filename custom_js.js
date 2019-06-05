@@ -1,9 +1,22 @@
-window.onload = function() {
+(function() {
+	window.onload = function() {
 
-	(function resize_popup() {	// lightbox pop-up on-resize img screen fitting
-		window.addEventListener('resize', bambi);
+		(function() {	// site loader screen animation
+			document.querySelector('#loader').style.display = 'none';
+			document.querySelector('#logo').style.animation = 'slide 1s forwards';
+		})();
 
-		function bambi() {		 
+		(function() {	// search input autofill off
+			var inpt = document.querySelectorAll('#search-searchword, #mod-search-searchword93, input[data-type="regular"], input[type="email"], input[data-type="number"]');
+			inpt.forEach(function(i) { i.onfocus = i.setAttribute('autocomplete', 'off'); });
+		})();
+	}
+})();
+
+(function() {	// lightbox pop-up on-resize img screen fitting
+		window.addEventListener('resize', reload_img);
+
+		function reload_img() {	
 			let lb = document.querySelector('#lightbox');
 			let img = document.querySelector('.lb-image');
 
@@ -16,14 +29,3 @@ window.onload = function() {
 				}
 		};
 	})();
-
-	(function site_loader() {	// site loader screen animation
-		document.querySelector('#loader').style.display = 'none';
-		document.querySelector('#logo').style.animation = 'slide 1s forwards';
-	})();
-
-	(function autofill_off() {	// search input autofill off
-		var inpt = document.querySelectorAll('#search-searchword, #mod-search-searchword93');
-		inpt.forEach(function(i) { i.onfocus = i.setAttribute('autocomplete', 'off'); });
-	})();
-}

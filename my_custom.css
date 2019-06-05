@@ -721,8 +721,32 @@ li.pagination-end,
     background-color: #008049;
 }
 
-.chronoforms6_credits {
-    display: none;
+.ba-form {
+    border: none !important;
+    background: none !important
+}
+
+.tool.ba-captcha,
+.ba-form p a {
+    display: none !important
+}
+
+.ba-form .ba-alert {
+    box-shadow: 0 1px 5px #e94b35 !important;
+}
+
+#baform-1 .ba-form p {
+    color: transparent !important;
+}
+
+.ba-btn-submit {
+    width: 100px !important;
+    background-color: #0074DD !important
+}
+
+.save-and-continue-modal,
+.ba-modal.message-modal {
+    width: 550px !important
 }
 
 .btn-toolbar {
@@ -806,5 +830,36 @@ input#search-searchword:-webkit-autofill {
 
     #lg_screen_cvr {
         clear: both;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    #baform-1 input.ba-btn-submit {
+        width: 100px !important
+    }
+
+    div.modal-scrollable.ba-forms-modal .save-and-continue-modal, 
+    div.modal-scrollable.ba-forms-modal .ba-modal.message-modal, 
+    div.modal-scrollable.ba-forms-modal .ba-modal.popup-form {
+        width: 550px !important
+    }
+}
+
+@media (max-width: 700px) {
+
+    div.modal-scrollable.ba-forms-modal .save-and-continue-modal, 
+    div.modal-scrollable.ba-forms-modal .ba-modal.message-modal, 
+    div.modal-scrollable.ba-forms-modal .ba-modal.popup-form {
+        width: 100% !important
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .ba-form .row-fluid:before, .row-fluid:after {
+        display: block !important;
+        content: none !important;
+        line-height: 30px !important;
     }
 }
