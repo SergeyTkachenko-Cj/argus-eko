@@ -9,9 +9,10 @@
 #loader p {
     position: absolute;
     top: 50%;
-    font-size: 40px;
-    color: snow;
     width: 100%;
+    font-size: 40px;
+    line-height: normal;
+    color: snow;
     text-align: center;
     animation: 1s shaky alternate infinite;
 }
@@ -81,7 +82,8 @@ a[href^="tel"] {
 }
 
 #wrapper {
-    min-width: 970px;
+    /*min-width: 970px;*/
+    min-width: 0;
 }
 
 #head_inner, #lg_screen_cvr {
@@ -98,9 +100,6 @@ a[href^="tel"] {
     z-index: 1;
     box-shadow: 1px 1px 5px grey;
 	background-image: none;
-    /*background-position: left -20px;
-    background-repeat: repeat-x;
-    background-size: 100% 115%;*/
     background: #008049;
 }
 
@@ -348,6 +347,42 @@ a[href^="tel"] {
 
 #top_icon ul li a span {
     margin-top: 10px;
+}
+
+.addmenu {
+    display: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px grey;
+    background-color: #008049;
+    background: -webkit-gradient(linear, left top, left bottom, from(#28bc7b), to(#008049));
+}
+
+.addmenu a {
+    padding: 5px 15px;
+    color: white !important;
+    text-decoration: none;
+}
+
+.addmenu a:hover {
+    background-image: linear-gradient(to right, #81f469, #a8eb12),linear-gradient(to right, #81f469, #a8eb12);
+    background-size: 10px 10%;
+    background-position: 0 15px, 100% 15px;
+    background-repeat: no-repeat;
+}
+
+.addmenu .nav.menu.mod-list {
+    width: 45%;
+    list-style-type: none;
+}
+
+.addmenu .nav.menu.mod-list:first-child {
+    float: left;
+    text-align: right;
+}
+
+.addmenu .nav.menu.mod-list:last-child {
+    float: right;
+    text-align: left;
 }
 
 div#content * {
@@ -816,7 +851,16 @@ input#search-searchword:-webkit-autofill {
     background-color: #0074DD;
 }
 
+@media (max-width: 1115px) {
 
+    #left, #right {
+        display: none
+    }
+
+    #content {
+        margin: 0px 10%
+    }
+}
 
 @media (max-width: 1135px) {
 
@@ -846,12 +890,39 @@ input#search-searchword:-webkit-autofill {
     }
 }
 
+@media (max-width: 900px) {
+
+    #header_links1, #header_links2 {
+        display: none
+    }
+
+    .addmenu {
+        display: block;
+    }
+}
+
 @media (max-width: 700px) {
 
     div.modal-scrollable.ba-forms-modal .save-and-continue-modal, 
     div.modal-scrollable.ba-forms-modal .ba-modal.message-modal, 
     div.modal-scrollable.ba-forms-modal .ba-modal.popup-form {
         width: 100% !important
+    }
+}
+
+@media (max-width: 550px) {
+
+    .addmenu {
+        display: block;
+        width: 50%;
+        height: auto;
+    }
+
+    .addmenu .nav.menu.mod-list:first-child,
+    .addmenu .nav.menu.mod-list:last-child {
+        width: 100%;
+        float: none;
+        text-align: left;
     }
 }
 
