@@ -57,11 +57,14 @@ defined('_JEXEC') or die;
     <div id="left"><jdoc:include type="modules" name="left" style="skaneris" /></div>
     <div id="right"><jdoc:include type="modules" name="right" style="skaneris" /></div>
     <div id="content">
-      <?php if($this->countModules('addmenu')) : ?>
+        <div class="mobilmenu">
+            <jdoc:include type="modules" name="newposition" />
+        </div>
+        <?php if($this->countModules('addmenu')) : ?>
            <div class="addmenu">
                  <jdoc:include type="modules" name="addmenu" style="none" />
            </div>  
-      <?php endif; ?>
+        <?php endif; ?>
       <jdoc:include type="component" />
     </div>
     <div class="clr"></div>
