@@ -1,5 +1,6 @@
 #loader {
     position: fixed;
+    display: none;
     z-index: 999;
     width: 101%;
     height: 100%;
@@ -8,7 +9,7 @@
 
 #loader p {
     position: absolute;
-    top: 50%;
+    top: 45%;
     width: 100%;
     font-size: 40px;
     line-height: normal;
@@ -474,8 +475,33 @@ table {
 
 .scroll_table {
     display: block;
-    overflow: scroll;
+    overflow: auto;
     cursor: all-scroll;
+}
+
+/*.scroll_table::before {
+    content: 'Прокрутите таблицу';
+    display: none;
+    position: absolute;
+    padding: 2px 5px;
+    color: white;
+    background: green;
+    box-shadow: 2px 2px 5px black;
+}
+
+.scroll_table:hover::before {
+    display: block;
+}*/
+
+#toolTipCursor {
+    position: fixed;
+    display: none;
+    z-index: 9999;
+    padding: 2px 5px;
+    color: white;
+    background: green;
+    box-shadow: 2px 2px 5px black;
+    white-space: nowrap;
 }
 
 td {
@@ -870,6 +896,27 @@ input#search-searchword:-webkit-autofill {
     }
 }
 
+@media (min-width: 1000px) {
+
+    #sro {
+        display: table
+    }
+}
+
+@media (min-width: 970px) {
+
+    #m4s1, #m4s2 {
+        display: table
+    }
+}
+
+@media (min-width: 525px) {
+
+    #feedback {
+        display: table
+    }
+}
+
 @media (max-width: 1200px) {
 
     #baform-1 input.ba-btn-submit {
@@ -937,7 +984,15 @@ input#search-searchword:-webkit-autofill {
 @media (max-width: 610px) {
 
     .addmenu {
-        height: 250px
+        height: auto
+    }
+
+    #cpo_sub_menu {
+        height: 250px;
+    }
+
+    #study_seminars {
+        height: 120px;
     }
 
     .nav.menuadd.mod-list {

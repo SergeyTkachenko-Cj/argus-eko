@@ -20,16 +20,16 @@ defined('_JEXEC') or die;
                 <link href="<?php echo $this->baseurl ?>/templates/argus/css/ie8.css" rel="stylesheet" type="text/css" />
         <?php } ?>
   <![endif]-->
-  <script src="<?php echo $this->baseurl ?>/templates/argus/js/jquery.js"></script>
-  <script src="<?php echo $this->baseurl ?>/templates/argus/js/js.js"></script>
-  <meta name='wmail-verification' content='a682dd12a289e72b' />
+    <script src="<?php echo $this->baseurl ?>/templates/argus/js/jquery.js"></script>
+    <script src="<?php echo $this->baseurl ?>/templates/argus/js/js.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name='wmail-verification' content='a682dd12a289e72b' />
     <meta name='wmail-verification' content='454e7984ff1c7d67' />
     <meta name='wmail-verification' content='b57c03595cbcd279' />
     <meta name='wmail-verification' content='a153233ca34d9d4a' />
     <meta name="google-site-verification" content="P_TMF_MPbJGSI3D4UYevA3wvDlZdiFNWbnsdIsAcah4" />
     <meta name='yandex-verification' content='7ad364d79166c2ed' />
     <link rel="stylesheet" href="/templates/argus/css/custom.css" type="text/css" />
-    <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Open+Sans+Condensed:300|Podkova|Rubik+Mono+One|Ubuntu|Yeseva+One&display=swap" rel="stylesheet">
     <script type="text/javaScript" src="/templates/argus/js/custom_js.js"></script>
 </head>
@@ -38,6 +38,8 @@ defined('_JEXEC') or die;
 <div id="loader">
   <p>Добро пожаловать в "АРГУС-ЭКО"</p>
 </div>
+
+<span id="toolTipCursor">Прокрутите таблицу</span>
 
 <div id="wrapper">
   <div id="header">
