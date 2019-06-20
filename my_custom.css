@@ -137,6 +137,7 @@ a[href^="tel"] {
     background-image: url(../images/natural-paper.png);
     background-color: gold;
     transform: translateX(-101%);
+    animation: 2s slide 2s forwards;
 }
 
 @keyframes slide {
@@ -885,6 +886,29 @@ input#search-searchword:-webkit-autofill {
     user-select: none;
     color: #fff;
     background-color: #0074DD;
+}
+
+.article {
+    border: none;
+    border-radius: 5px;
+    font-size: 18px !important;
+    text-shadow: none;
+    box-shadow: none;
+    color: black !important;
+    background-image: url(../images/natural-paper.png);
+    background-color: gold;
+}
+
+.article:hover {
+    border: none;
+    text-shadow: none;
+    box-shadow: none;
+    background-image: url(../images/natural-paper.png);
+    background-color: #e8f99a;
+}
+
+.article_tble span {
+    font-size: 20px !important
 }
 
 @media (min-width: 1200px) {
