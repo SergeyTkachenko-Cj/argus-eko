@@ -38,6 +38,19 @@
 				});
 
 		})();
+
+		(function() {	// articles/news back button
+			var backLinks = document.querySelector('.backLink');
+
+			if (backLinks) {
+				backLinks.setAttribute('href', document.referrer);
+
+				backLinks.onclick = function() {
+			  		history.back();
+			  		return false;
+				}
+			}
+		})();
 	}
 })();
 

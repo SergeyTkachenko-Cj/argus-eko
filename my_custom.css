@@ -56,6 +56,7 @@
 .lb-nav a.lb-next,
 .lb-nav a.lb-prev {
     width: 50% !important;
+    opacity: 1 !important;
     background-size: auto 10%;
 }
 
@@ -426,7 +427,7 @@ div#content h4 {
 }
 
 .addmenu .item-123 img {
-    background-image: url(../images/construction-sign-6-605847.png);
+    background-image: url(../images/worker.png);
     background-position: 0 -13px;
 }
 
@@ -911,6 +912,32 @@ input#search-searchword:-webkit-autofill {
     font-size: 20px !important
 }
 
+#banner_table td {
+    padding: 30px 20px !important;
+    background-color: crimson;
+}
+
+#banner_table .special_offer {
+    margin-bottom: 0.5em;
+    font-size: 50px;
+    text-align: center;
+    color: gold !important;
+}
+
+#banner_table .main_text {
+    font-size: 28px;
+    text-align: center;
+    color: white !important;
+}
+
+#banner_table .offer_sum {
+    font-size: 35px;
+    text-align: center;
+    color: gold !important;
+}
+
+
+
 @media (min-width: 1200px) {
 
     .ba-form .row-fluid:before, .row-fluid:after {
@@ -1070,5 +1097,20 @@ input#search-searchword:-webkit-autofill {
 
     #top_icon {
         padding-top: 30px;
+    }
+}
+
+@media (max-width: 418px) {
+
+    #banner_table .special_offer {
+        font-size: 40px;
+    }
+
+    #banner_table .main_text {
+        font-size: 18px;
+    }
+
+    #banner_table .offer_sum {
+        font-size: 25px;
     }
 }
