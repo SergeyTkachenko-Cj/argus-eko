@@ -426,13 +426,14 @@ div#content h4 {
     transition: 0.5s;
 }
 
-.addmenu .item-123 img {
+.addmenu li.item-123 img {
     background-image: url(../images/worker.png);
-    background-position: 0 -13px;
+    background-size: 170% 150%;
+    background-position: 0 -25px;
 }
 
-ul.menuadd .item-123 a:hover img {
-    background-position: 0px 70px;
+ul.menuadd li.item-123 a:hover img {
+    background-position: 0px 58px;
 }
 
 ul.menuadd li.item-124 a img {
@@ -936,6 +937,10 @@ input#search-searchword:-webkit-autofill {
     color: gold !important;
 }
 
+.hid_feedback {
+    display: none
+}
+
 
 
 @media (min-width: 1200px) {
@@ -1086,6 +1091,17 @@ input#search-searchword:-webkit-autofill {
 
     #top_icon .nav.menu.mod-list li:nth-child(even) {
         float: right;
+    }
+}
+
+@media (max-width: 530px) {
+
+    #feedback {
+        display: none
+    }
+
+    .hid_feedback {
+        display: block
     }
 }
 
