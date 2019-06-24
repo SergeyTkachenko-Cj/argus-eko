@@ -1,10 +1,9 @@
 (function() {
 	window.onload = function() {
 
-		// (function() {	// site loader screen animation
-		// 	document.querySelector('#loader').style.display = 'none';
-		// 	document.querySelector('#logo').style.animation = 'slide 1s forwards';
-		// })();
+		(function() {	// logo slide animation
+			document.querySelector('#logo').style.animation = 'slide 1s forwards';
+		})();
 
 		(function() {	// search input autofill off
 			var inpt = document.querySelectorAll('#search-searchword, #mod-search-searchword93, input[data-type="regular"], input[type="email"], input[data-type="number"]');

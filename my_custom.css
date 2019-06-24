@@ -138,7 +138,7 @@ a[href^="tel"] {
     background-image: url(../images/natural-paper.png);
     background-color: gold;
     transform: translateX(-101%);
-    animation: 2s slide 2s forwards;
+    /*animation: 2s slide 2s forwards;*/
 }
 
 @keyframes slide {
@@ -217,9 +217,13 @@ a[href^="tel"] {
 
 #top_icon {
     height: 170px;
+    text-align: center;
 }
 
 #top_icon ul {
+    display: inline-block;
+    width: auto;
+    margin: 0;
     padding-top: 20px;
 }
 
@@ -416,6 +420,17 @@ div#content h4 {
     padding-bottom: 30px;
     text-align: center;
     font-size: 25px;
+}
+
+#cpo_sub_menu {
+    display: inline-block;
+    width: auto;
+    height: 250px;
+    margin: 0;
+}
+
+.addmenu {
+    text-align: center
 }
 
 .addmenu li img {
