@@ -497,20 +497,6 @@ table {
     cursor: all-scroll;
 }
 
-/*.scroll_table::before {
-    content: 'Прокрутите таблицу';
-    display: none;
-    position: absolute;
-    padding: 2px 5px;
-    color: white;
-    background: green;
-    box-shadow: 2px 2px 5px black;
-}
-
-.scroll_table:hover::before {
-    display: block;
-}*/
-
 #toolTipCursor {
     position: fixed;
     display: none;
@@ -828,6 +814,10 @@ li.pagination-end,
     color: transparent !important;
 }
 
+#baform-3 .ba-form input[name="form_id"] + p {
+    display: none !important;
+}
+
 .ba-btn-submit {
     width: 100px !important;
     background-color: #0074DD !important
@@ -958,7 +948,18 @@ input#search-searchword:-webkit-autofill {
 
 
 
+/* @media (min-width: 1300px) {
+
+    .ba-form {
+        width: 50% !important;
+    }
+} */
+
 @media (min-width: 1200px) {
+
+    .ba-form {
+        width: 50% !important;
+    }
 
     .ba-form .row-fluid:before, .row-fluid:after {
         display: block !important;
@@ -990,7 +991,8 @@ input#search-searchword:-webkit-autofill {
 
 @media (max-width: 1200px) {
 
-    #baform-1 input.ba-btn-submit {
+    #baform-1 input.ba-btn-submit,
+    #baform-3 input.ba-btn-submit {
         width: 100px !important
     }
 
@@ -1025,6 +1027,10 @@ input#search-searchword:-webkit-autofill {
     #content {
         margin: 0px 10%
     }
+
+    .ba-form {
+        width: 50% !important;
+    }
 }
 
 @media (max-width: 900px) {
@@ -1040,6 +1046,10 @@ input#search-searchword:-webkit-autofill {
     .mobilmenu {
         display: block;
         height: 125px;
+    }
+
+    .ba-form {
+        width: 100% !important;
     }
 }
 
